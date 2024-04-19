@@ -1,6 +1,6 @@
 #ifndef danseur_h
 #define danseur_h
-#include "personnes.cpp"
+#include "personnes.h"
 #include <string>
 #include <ios>
 class danseur : public personnes

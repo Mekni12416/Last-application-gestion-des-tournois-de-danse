@@ -1,9 +1,40 @@
 #include <iostream>
 using namespace std;
-#include "spectateur.h"
+//#include "spectateur.h"
 
 #include <string>
 #include "iterator"
+
+#ifndef spectateur_h
+#define spectateur_h
+#include "personnes.h"
+#include "Ticket.cpp"
+#include <string>
+#include <map>
+#include <ios>
+class spectateur : public personnes
+{
+  int age;
+ multimap<spectateur, Ticket> Mymap;
+
+public:
+  spectateur();
+  spectateur(const spectateur &);
+  ~spectateur();
+  spectateur(int, string, string, string, string, int = 0);
+  void ajouter_ticket(spectateur s, Ticket *t)
+  {
+    Mymap.insert(pair<spectateur, Ticket>(s, *t));
+  }
+  void get_spectateur();
+  friend ostream &operator<<(ostream &, spectateur &);
+  friend istream &operator>>(istream &, spectateur &);
+  spectateur &operator=(spectateur &);
+  bool operator<(const spectateur &other) const { return nom < other.nom; }
+ 
+};
+
+#endif
 // constructeur par deffaut pour spectateur
 spectateur::spectateur()
 {
@@ -17,7 +48,7 @@ spectateur::spectateur(int cin_p, string nom, string prenom, string nationalite,
 }
 // destrecteur
 spectateur::~spectateur() {}
-spectateur::spectateur(const spectateur &r)
+spectateur::spectateur(const spectateur &r):personnes(r)
 {
     this->age = r.age;
 }

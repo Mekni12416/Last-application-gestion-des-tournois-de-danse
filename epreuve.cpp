@@ -10,7 +10,7 @@ Epreuves::Epreuves(int num, string heure, string nom, string lieu, string date, 
     this->date = date;
     this->nbre_danseur = nbr;
 }
-/*
+
 Epreuves::Epreuves(const Epreuves &e)
 {
     this->num_epreuves=e.num_epreuves;
@@ -20,14 +20,16 @@ Epreuves::Epreuves(const Epreuves &e)
     this->date=e.date;
     this->nbre_danseur= e.nbre_danseur;
     list<Resultat>::iterator it;
-    for(it=e.listRsultat.begin();it!=e.listRsultat.end();++it)
+    for(auto it=e.listRsultat.begin();it!=e.listRsultat.end();++it)
     {
-        it->affichResulat();
+        listRsultat.push_back(*it);
+        //(*it)->affichResulat();
+       
         cout<<"\n";
     }
 
 }
- */
+ 
 void Epreuves::afficher_epreuves()
 {
     cout << "numero epreuve:" << this->num_epreuves << "\n heure epreuves: " << this->heure_epreuves << endl;

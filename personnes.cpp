@@ -2,6 +2,12 @@
 using namespace std;
 #include "personnes.h"
 #include <string>
+ 
+#define personnes_h
+using namespace std;
+#include <string>
+#include<ios>
+
 
 // constructeur personnes pour initialiser les attributs
 personnes::personnes()

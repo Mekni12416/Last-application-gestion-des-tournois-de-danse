@@ -172,8 +172,9 @@ ostream& operator<<(ostream& out,  Resultat &r)
 }*/
 
 void Resultat::ajout_score(danseur d, score *s){
+    
     myMap.insert(pair<danseur,score>(d,*s));
-
+        
 }
 
 void Resultat::affichResulat()
