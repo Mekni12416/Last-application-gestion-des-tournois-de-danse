@@ -1,0 +1,14 @@
+
+numero epreuve:1
+ heure epreuves: 15h
+Nom de l epreuve:salsa
+Lieu de l epreuve:tunis
+Date de l epreuve:12juin
+nombre de danseur:2
+
+numero epreuve:2
+ heure epreuves: 17h45min
+Nom de l epreuve:musique
+Lieu de l epreuve:bizerte
+Date de l epreuve:12mai
+nombre de danseur:4

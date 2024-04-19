@@ -1,0 +1,7 @@
+le cin est : 6
+le nom est : d
+le prenom est : 5
+la nationalite est : f
+le date naissance est : d
+le style de danse est :d
+le niveau entrenement : d
