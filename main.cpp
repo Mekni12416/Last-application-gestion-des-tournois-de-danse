@@ -174,13 +174,13 @@ void gestionScores(Resultat& resultat, const std::vector<danseur*>& listeDanseur
                     std::cout << "Indice du danseur : ";
                     std::cin >> indexDanseur;
                     if (indexDanseur >= 1 && indexDanseur <= listeDanseurs.size()) {
-                        score s;
-                        cin>>s;
-                        /*
+                        /*score s;
+                        cin>>s;*/
+                        
                         int valeurScore;
                         std::cout << "Entrez la valeur du score : ";
-                        std::cin >> valeurScore;*/
-                        score *nouveauScore = new score(s);
+                        std::cin >> valeurScore;
+                        score *nouveauScore = new score(valeurScore);
                         resultat.ajout_score(*listeDanseurs[indexDanseur - 1], nouveauScore);
                         std::cout << "Score attribue avec succes au danseur : " << listeDanseurs[indexDanseur - 1]->getNom() << std::endl;
                     } else {
