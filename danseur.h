@@ -15,10 +15,12 @@ public:
     void enregistrer_danseur();
  
     void get_danseur() const;
+     friend float calculScore();
     friend ostream& operator<<(ostream& , danseur&);
     bool operator<(const  danseur& other)const { return nom < other.nom;}
     friend istream& operator>>(istream& , danseur&);
 
+    
     friend ostream& operator<<(ostream& , danseur*);
      friend istream& operator>>(istream& , danseur*);
 

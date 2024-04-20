@@ -1,10 +1,11 @@
 
 #include<string>
 #include<list>
-#include "Resultat.h"
+#include "Resultat.cpp"
 #include "iterator"
 #include<ios>
 #include <fstream>
+
 using namespace std;
 class Epreuves
 {
@@ -16,11 +17,20 @@ private:
     int nbre_danseur;
     list<Resultat *> listRsultat;
 public:
+    string getNom(){return nom;}
     //Constructeur par defaut
     Epreuves(int=0,string=" ",string=" ",string=" ",string=" ",int=0);
     //Constructeur par recopie
     Epreuves(const Epreuves &e);
     //AFFICHAGE EPREUVE
+    bool compareNoms(const Epreuves& d1, const Epreuves& d2) {
+    return d1.nom < d2.nom;
+    }
+    list<Resultat *> getListResultat(){return listRsultat;}
+    // Fonction de comparaison pour le tri des pointeurs d'Epreuves par leur nom
+    static bool compareNomsEpreuves(const Epreuves* e1, const Epreuves* e2) {
+        return e1->nom < e2->nom;
+    }
     void afficher_epreuves();
     //SURCHARGE OPERATEUR =
     Epreuves& operator=(Epreuves&);
@@ -42,6 +52,8 @@ public:
     void creerFichierEpreuve(fstream& f);
     void remplirFiciherEpreuve(fstream& f);
     void afficherFiciherEpreuve(fstream& f);
+
+    void afficherClassementDanseur(int);
 
 
 

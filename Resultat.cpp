@@ -24,8 +24,10 @@ public:
     const multimap<danseur, score>& getMyMap()  const{return myMap;}
     friend ostream& operator<<(ostream&, Resultat&);
     friend istream& operator>>(istream&, Resultat&);
-      void affichResulat();
-      void ajout_score(danseur d, score *s);
+    void affichResulat();
+    void ajout_score(danseur d, score *s);
+     void afficherClassementDanseur();
+   
     //PARTIE FICIHIER
      
      
@@ -186,13 +188,13 @@ void Resultat::affichResulat()
         
         //cout<< it->first;
         it->first.get_danseur();
-        cout<<"Le resultat sur 20 est:\n";
+        cout<<"Le resultat sur 20 est:";
         cout<<it->second.calculScore()<<endl;
     }
 
 
  }
     
-    
+
     
      
