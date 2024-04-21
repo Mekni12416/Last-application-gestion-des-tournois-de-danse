@@ -10,7 +10,7 @@ protected:
 
 public:
     danseur();
-    ~danseur();
+    virtual ~danseur();
     danseur(int, string, string, string, string, string);
     void enregistrer_danseur();
  

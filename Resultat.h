@@ -1,8 +1,9 @@
-/*using namespace std;
+using namespace std;
 #include <ios>
 #include <map>
 #include "danseur.h"
-#include "score.h"
+#include "score.cpp"
+#pragma once 
 class Resultat
 {
 protected:
@@ -26,7 +27,7 @@ public:
      
      ~Resultat();
 };
-*/
+
 /*
 Resultat::Resultat(int num)
 {

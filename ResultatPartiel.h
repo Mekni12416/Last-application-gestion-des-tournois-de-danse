@@ -1,8 +1,9 @@
  
-#include "Resultat.cpp"
+#include "Resultat.h"
 #include <string>
 #include<vector>
 using namespace std;
+#pragma once 
 class ResultatPartiel:public Resultat
 {
 private:

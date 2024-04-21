@@ -1,6 +1,6 @@
- /*
+ 
 #include<vector>
-#include "critere.h"
+#include "critere.cpp"
 #include <ios>
 using namespace std;
 class score
@@ -22,7 +22,7 @@ public:
     
     ~score();
 };
-*/
+
 /*
 score::score(int num, int val)
 {

@@ -66,8 +66,9 @@ void danseur_amateur::creer_fichier(fstream& f){
         exit(-1);
     }
 }
+/*
 void danseur_amateur::remplir_fichier(fstream& f){
-    danseur_amateur d;
+    danseur_amateur d();
     int n;
     cout<<"donner le nombre de danseurs amateurs a remplir"<<endl;
     cin>>n;
@@ -76,9 +77,9 @@ void danseur_amateur::remplir_fichier(fstream& f){
         cin>>d;
         f<<d<<endl;
     }
-}
-void danseur_amateur::afficher_fichier(fstream& f){
-    danseur_amateur d;
+}*/
+/*void danseur_amateur::afficher_fichier(fstream& f){
+    danseur_amateur d();
     f.seekg(0);
     
     int arret=0;
@@ -96,7 +97,7 @@ void danseur_amateur::afficher_fichier(fstream& f){
     
     
 }
-
+*/
 ostream& operator<<(ostream& out,danseur_amateur* d){
     out<<"le cin est : "<<d->cin_p<<endl;
     out<<"le nom est : "<<d->nom<<endl;

@@ -1,30 +1,8 @@
  
 #include<iostream>
-//#include "critere.h"
+#include "critere.h"
 
-#include <string>
-#include<ios>
-using namespace std;
-class Critere
-{
-private:
-    /* data */
-    int poids;
-    string description;
-public:
-    Critere(int=0, string=" ");
-    Critere(const Critere&);
-    void saisirCritere();
-    friend ostream& operator<<(ostream&, Critere&);
-    friend istream& operator>>(istream&, Critere&);
-    void afficher();
-    int getPoids(){return poids;}
-    string getDescription(){return description;}
 
-    ~Critere(){} 
-};
-
- 
 
 
 Critere::Critere(int poid, string descrip)

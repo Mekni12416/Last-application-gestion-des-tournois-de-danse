@@ -8,7 +8,7 @@ class danseur_amateur:public danseur
     public:
     danseur_amateur();
     ~danseur_amateur();
-    danseur_amateur(int, string, string, string, string, string,string);
+    danseur_amateur(int, string, string, string, string, string,string=" ");
     void enregistrer_danseur_amateur();
     void afficher_danseur_amateur();
     friend ostream& operator<<(ostream& , danseur_amateur&);

@@ -31,6 +31,7 @@ public:
     static bool compareNomsEpreuves(const Epreuves* e1, const Epreuves* e2) {
         return e1->nom < e2->nom;
     }
+    
     void afficher_epreuves();
     //SURCHARGE OPERATEUR =
     Epreuves& operator=(Epreuves&);

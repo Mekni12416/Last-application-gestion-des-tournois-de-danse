@@ -13,9 +13,9 @@ using namespace std;
 personnes::personnes()
 {
     cin_p = 0;
-    nom = "";
-    prenom = "";
-    nationalite = "";
+    nom = "modou";
+    prenom = "mekni";
+    nationalite = "sentun";
     date_naissance = "";
 }
 //const recopie

@@ -1,14 +1,15 @@
  
 #include<iostream>
-//#include "score.h"
+#include "score.h"
 #include<vector>
-#include "critere.cpp"
+//#include "critere.cpp"
 #include <ios>
 using namespace std;
+/*
 class score
 {
 private:
-    /* data */
+    
     int numScore;
     int valeur;
     vector<Critere *>  listCrit;
@@ -24,7 +25,7 @@ public:
     
     ~score();
 };
-
+*/
 score::score(int num, int val)
 {
     this->valeur=val;

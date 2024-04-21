@@ -1,4 +1,4 @@
-/*
+
 #include <string>
 #include<ios>
 using namespace std;
@@ -20,5 +20,5 @@ public:
 
     ~Critere(){} 
 };
-*/
+
  

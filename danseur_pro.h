@@ -12,7 +12,7 @@ class danseur_pro:public danseur
 public:
     danseur_pro();
     ~danseur_pro();
-    danseur_pro(int, string, string, string, string, string, int, string);
+    danseur_pro(int, string, string, string, string, string, int=0, string="champion");
     void enregistrer_danseur_pro();
     void afficher_danseur_pro();
     friend ostream& operator<<(ostream& , danseur_pro&);
